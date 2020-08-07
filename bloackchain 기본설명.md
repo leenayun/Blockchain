@@ -58,6 +58,11 @@
 - 처음 시작된 블록을 제네시스라고 부른다. (최초의 블록)
 
 
+<img src="https://github.com/leenayun/Blockchain/blob/master/image/public_NonPublick.PNG" width="650px" title="public non-public blockchain" alt="table"></img>
+
+<br/>
+
+
  * 머클루트는 거래를 두 개씩 묶음 다음 SHA256알고리즘을 통해 해시값으로 나타내고 또 다시 묶은 묶어서 또 해싱하여 수 백 개의 거래 값들을 그림의 가장 꼭대기에 위한 하나의 데이터로 만들어 주는 것이다. 특정 거래를 쉽고 빠르게 찾을 수 있고 거래의 위변조도 쉽고 빠르게 찾고 방지할 수 있다.
  
  
@@ -107,6 +112,20 @@
 
 >## Public $ Non-Public BlockChain
     
+  #### 1. 개방형 블록체인 (Public BlockChain)
+  - 시스템 사용자 관점에서 누구나 사용할 수 있도록 공개된 블록체인
+  - 비트코인, 이더리움, EOS등 민간 암호 화폐에 사용되는 고비용 고신뢰 완전 분산형 시스템
+  
+  #### 2. 전용 블록체인 (Private Blockchain)
+  - 하나의 중앙기관에 의해 관리되며 권한에 따라 사용이 제한되는 내부 전산망 블록체인
+  - 증권거래소 및 국가 암호 화폐에 사용되는 저비용 저신뢰 완전 집중형 시스템
+  
+  #### 3. 반중앙형 블록체인 (Consortium Blockchain)
+  - 미리 선정된 사용자에 한해 운영되는 반 중앙형 블록체인
+  - 대중의 열람을 허용할 수도 있고 특정 인원에게만 제한적으로 허용할 수도 있는 시스템
+  
+<br/>
+
 <img src="https://github.com/leenayun/Blockchain/blob/master/image/public_NonPublick.PNG" width="650px" title="public non-public blockchain" alt="table"></img>
 
 <br/>
