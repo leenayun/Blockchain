@@ -1,7 +1,7 @@
 
 # Blockchain 
 
-
+<br/><br/>
 
 >## Client-Server
 
@@ -27,9 +27,9 @@
 - 비대칭 키를 사용하여 보안 강화
 
   
-   
+   <br/><br/>
 ***
-   
+   <br/><br/>
   
 >## 분산원장 (Distributed Ledger Technology, DLT)
 
@@ -39,9 +39,9 @@
 
 
   
-  
+  <br/><br/>
 ***
-  
+  <br/><br/>
   
 
 >## 블록체인 Blockchain Security Technology
@@ -75,9 +75,9 @@
 3. R3CEV : 글로벌 은행 컨소시엄
 
    
-
+<br/><br/>
 ***
-      
+   <br/><br/>   
 
 >## Blockchain Algorithm
 
@@ -86,12 +86,12 @@
 - 암호 화폐의 경우 하나의 거래 정보를 32바이트로 매핑하여 저장
 - 알고리즘의 출력 결과값으로 입력값을 알아낼 수 없음
 - 데이터의 무결성을 보장
-
+<br/>
 ### Consensus Algorithm
 - 분산원장 시스템 내의 모든 노드가 일관성 있는 분산원장을 보유할 수 있도록 통신을 통해 새로운 기록의 공유, 검증 및 추가에 대한 전체의 동의를 이끌어 내는 합의 알고리즘
 - 노드 간의 분산원장 동기화는 동시에 일어나지 않기 때문에 네트워크상에는 일시적으로 서로 다른 기록이 포함된 원장들이 존재할 수 있고, 노드들 중에는 신뢰할 수 없는 참여자가 포함될 수 있기 떄문에 시스템 내의 노드를이 서로 간의 통신을 통해 최종적으로 동일한 기록을 채택하게 하는 방식 
 - 작업증명(PoW), 지분증명(PoS), 위임지분증명(DPoS), 경과시간증명(PoET), 권한증명(PoA) ... 등이 있음
-
+<br/>
 #### 1. 작업증명 (Proof of Work, PoW)
 - **컴퓨터 연산 작업**을 수행하여 블록체인에 기여하는 대가로 **보상**을 받는 방식
 - 최초의 암호화 가상화폐인 비트코인에 적용된 방법
@@ -103,9 +103,11 @@
 #### 3. 위임된 지분 증명 (Delegated Proof of Stake, DPoS)
 - **선정된 대표자의 합의**에 따라 **의사결정을 수행**하는 방식
 - 소수의 대표자가 블록을 검증하기 때문에 지분 증명 방식보다 처리 성능이 크게 개선
-
+<br/><br/>
 
 >## Public $ Non-Public BlockChain
     
-<img src="https://github.com/leenayun/Blockchain/blob/master/image/public_NonPublick.PNG" width="450px" height="300px" title="public non-public blockchain" alt="table"></img><br/>
+<img src="https://github.com/leenayun/Blockchain/blob/master/image/public_NonPublick.PNG" width="650px" title="public non-public blockchain" alt="table"></img>
+
+<br/>
 
