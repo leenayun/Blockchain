@@ -27,9 +27,9 @@
 - 비대칭 키를 사용하여 보안 강화
 
   
-  
+   
 ***
-  
+   
   
 >## 분산원장 (Distributed Ledger Technology, DLT)
 
@@ -74,10 +74,10 @@
 2. EEA(Enterprise Ethereum Aliance) : 이더리움 기반의 허가형 블록체인 컨소시엄 
 3. R3CEV : 글로벌 은행 컨소시엄
 
-
+   
 
 ***
-
+      
 
 >## Blockchain Algorithm
 
@@ -106,5 +106,6 @@
 
 
 >## Public $ Non-Public BlockChain
+    
+<img src="/Blockchain/image/public_NonPublick.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 
-[Alt text](/Blockchain/image/public_NonPublick.png "Optional title")
