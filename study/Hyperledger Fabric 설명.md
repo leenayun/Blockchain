@@ -73,15 +73,15 @@
 </br>
 
 #### 3. peer
-- 원장과 체인코드를 관리하며 패브릭 네트워크를 구성하는 노드를 peer라고 부름
+- **원장과 체인코드를 관리하며 패브릭 네트워크를 구성하는 노드를 peer라고 부름**
 - 각 peer는 한 개 이상의 채널에 연결되어 있고, 각 채널에 대해 한 개 이상의 원장을 관리
 - 패브릭 네트워크 참여자들은 peer에 설치되어 있는 체인코드 실행요청을 통해 peer에 저장된 원장의 데이터를 읽거나 쓸 수 있음
 - 수행하는 역할에 따른 peer
 
-  1) Endorsing peer : 체인코드 시뮬레이션을 통해 트랜잭션이 적절한지 판단(Endorsement policy)하는 역할 (execution)
-  2) Committing peer : 모든 peer가 수행하는 역할로 최신 블록에 대한 검증을 함 / 분산원장과 체인코드 관리, 모든 노드는 이 역할을 수행(validation) 
-  3) Anchor peer : 다른 조직과의 통신을 위해 다른 조직의 peer와 통신하는 역할
-  4) Leader peer : orderer와 연결되어 최신 블록을 전달받아 조직 내 다른 peer들에게 전송하는 역할  
+  1) **Endorsing peer** : 체인코드 시뮬레이션을 통해 트랜잭션이 적절한지 판단(Endorsement policy)하는 역할 (execution)
+  2) **Committing peer** : 모든 peer가 수행하는 역할로 최신 블록에 대한 검증을 함 / 분산원장과 체인코드 관리, 모든 노드는 이 역할을 수행(validation) 
+  3) **Anchor peer** : 다른 조직과의 통신을 위해 다른 조직의 peer와 통신하는 역할
+  4) **Leader peer** : orderer와 연결되어 최신 블록을 전달받아 조직 내 다른 peer들에게 전송하는 역할  
 
 </br>
 
@@ -106,8 +106,8 @@
 - 네트워크 내 노드의 역할과 권한 등이 정의되어 있음
 - 조직을 나누는 기술
 - 자격증명을 포함한 사용자 인증 / 서명 생성 및 검증/ Access control 
-- Local MSP : Fabric에서 노드의 역할을 부여할 때 사용하는 MSP로 패브릭에 접속한 모든 노드는 하나 이상의 Local MSP가 정의되어 있어야 함
-- Channel MSP :  채널 구성원들에게 대한 정의와 관한을 부여할 때 사용하며 채널 구성원들간의 local MSP를 이용하여 하나의 Channel MSP 생성
+- **Local MSP** : Fabric에서 노드의 역할을 부여할 때 사용하는 MSP로 패브릭에 접속한 모든 노드는 하나 이상의 Local MSP가 정의되어 있어야 함
+- **Channel MSP** :  채널 구성원들에게 대한 정의와 관한을 부여할 때 사용하며 채널 구성원들간의 local MSP를 이용하여 하나의 Channel MSP 생성
 </br>
 
 #### 6. CA(Certificate Authority)
@@ -119,7 +119,7 @@
 </br>
 
 #### 7. channel
-- 모든 노드가 동일한 원장으로 정보를 공유 할 수 있음
+- **모든 노드가 동일한 원장으로 정보를 공유 할 수 있음**
 - 비즈니스 목적에 맞게 공유하고자 하는 **노드간에만 별도의 원장을 생성하는 것도 가능함** (기존의 블록체인 네트워크는 참여한 모든 노드에게 원장에 기록되어있는 정보가 공유되었음)
 - 기업입장에서 모두에게 공유하고 싶지 않은 민감한 정보들을 처리할 때 용이함
 - 서로 다른 원장 간 프라이버시 제공
@@ -138,10 +138,10 @@
 >## Hyperledger Fabric Consensus 데이터 처리과정 
 
 - 기존 블록체인 consenesus 
-  order → execute → update state 
+  **order → execute → update state** 
   
 - Hyperledger Fabric Consensus(EOV)
-  Execution - ordering - validation
+  **Execution - ordering - validation**
   
   * Execution: 트랜잭션 실행 / 결과값 검증
   * ordering: 검증이 끝난 트랜잭션을 취합하여 순서에 맞게 정렬한 후 블록을 생성
