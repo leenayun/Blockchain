@@ -1,5 +1,7 @@
 
-## Blockchain 
+# Blockchain 
+
+## Blockchain의 장점 
 
 ### Client-Server
 
@@ -20,5 +22,11 @@
 > 단점
 - 네트워크 전송 시간으로 인해 정보 불일치 발생
 
---> 
+** Blockchain ** 
+- 정보 불일치 해결 (Hash Algorithm, Consensus Algorithm)
+- 비대칭 키를 사용하여 보안 강화
+
+
+
+
 Peer To Peer Network
