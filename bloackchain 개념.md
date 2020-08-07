@@ -26,11 +26,11 @@
 - 정보 불일치 해결 (Hash Algorithm, Consensus Algorithm)
 - 비대칭 키를 사용하여 보안 강화
 
-
-
+  
+  
 ***
-
-
+  
+  
 >## 분산원장 (Distributed Ledger Technology, DLT)
 
 - 개인간 직접 접속 네트워크(Peer To Peer Network)를 사용하여 중앙 관리자나 중앙 데이터 저장소 없이 데이터 관리의 신뢰성을 높이기 위해 **분산 네트워크 내의 모든 참여자**가 거래 정보를 **합의 알고리즘**에 따라 서로 복제하여 공유하는 기술.
@@ -38,11 +38,11 @@
 - 블록체인은 분산원장을 구현하기 위한 하나의 데이터 구조이다.
 
 
-
-
+  
+  
 ***
-
-
+  
+  
 
 >## 블록체인 Blockchain Security Technology
 
