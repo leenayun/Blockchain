@@ -58,7 +58,7 @@
 - 처음 시작된 블록을 제네시스라고 부른다. (최초의 블록)
 
 
-<img src="https://github.com/leenayun/Blockchain/blob/master/image/public_NonPublick.PNG" width="650px" title="public non-public blockchain" alt="table"></img>
+<img src="https://github.com/leenayun/Blockchain/blob/master/image/%EB%A8%B8%ED%81%B4%EB%A3%A8%ED%8A%B8.PNG" width="650px" title="public non-public blockchain" alt="table"></img>
 
 <br/>
 
