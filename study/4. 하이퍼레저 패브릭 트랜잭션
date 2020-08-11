@@ -1,1 +1,52 @@
-1. client application 에서 m
+
+## Transaction
+
+>### 하나의 Transaction 처리하는 7단계  (1)
+
+0.client application이 거래를 제안, Membership Service Provider(MSP)에 등록(Enroll), 인증서 발급
+1. client application에서 인증서정보, Smart Contract Method와 Argument를 endorser(peer)에 전송 (transaction)
+2. Endorser(peer)가 트랜잭션이 vaildation 하다고 판단하면 서명, Chaincode(CC) 실행(excute) (비즈니스 로직실행)
+3. 검증 완료 후 보증된 response를 다시 client application에 반환
+4. 클라이언트가 모든 endorser들에게 검증을 받았다고 판단하면 orderer에게 transaction을 submit
+5. orderer는 채널, 체인코드 이름, 버전 별로 transaction을 분류 및 정렬 후 블록 생성 (o-service)
+6. orderer는 commiter에게 블록을 deliver
+7. commiter는 transaction을 endorsement policy에 대해서 검증하고 유효한지 확인, validation 후 원장에 작성(블록추가), world state에 update, commiter는 원장의 내용이 정상적으로 업데이트 되었음은 event을 통해서 application에 전달  
+
+
+</br>
+
+<img src="https://github.com/leenayun/Blockchain/blob/master/image/trandaction%EC%B2%98%EB%A6%AC.PNG"  title="peer role" alt="peer"></img>
+
+</br>
+
+
+
+>### 하나의 Transaction 처리하는 7단계 (2)
+
+1. Propose transaction (트랜잭션 제안)
+- Application이 Chaincode P에 대한 transaction를 생성하여 Endorsement Policy를 만족하기 위해서 {E0, E1, E2}에 transaction 제출
+
+
+2. Execute Proposal (제안 실행)
+- E0, E1, E2 각각은 제출된 Transaction을 실행(이때 원장에 update는 일어나지 않음)
+- 각각의 실행은 원장으로부터 Read set을, Chaincode의 실행 결과로 Write set을 생성
+
+3. Proposal Response (제안 반환)
+- Endorser는 RW-set에 서명을 한 후, Application에 반환 
+
+4. Order Transaction (트랜잭션 정렬)
+- 모든 endorser로부터 sign된 response를 받았다면 (Endorsement Policy를 만족했다면) Application은 해당 response를 orderer에게 Transaction으로 제출 (이때, 다른 응용 프로그램에서 제출 한 트랜잭션과 병렬 처리됨)
+- orderer가 트랜잭션을 채널별, 체인코드별, 버전별로 분류 후 시간 순서대로 정렬(o-service) 
+- 정렬된 트랜잭션의 수가 일정 수를 초고하하거나 일정 시간이 지나면 블록생성
+
+5. Deliver Transaction (트랜잭션 전달)
+- orderer(peer)는  gossip protocol을 사용하여 모든 Committing peer에게 블록 전달
+
+
+6. Validate Transaction 
+- Committing peer들은 Transaction을 endorsement policy에 대해서 검증하고 유효한지 확인, RW-set이 유효한지 확인
+- 검증이 완료되면 Transaction은 원장에 쓰여지고 Worldstate를 update
+
+
+7. Notify Transaction (트랜잭션 알림?공지?)
+- commiter peer가 Application은 Peer로부터 Chaincode 실행의 성공/실패와 원장의 update에 대한 event를 받아서 처리
